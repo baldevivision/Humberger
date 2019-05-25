@@ -1,0 +1,569 @@
+/*font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif;*/
+
+/* Common css start here
+   ========================================================================== */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+html{
+  font-size: 16px;
+}
+body{
+  font-family: 'Raleway', sans-serif;
+}
+ul li{
+  list-style: none;
+  display: inline-block;
+}
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.container-small{
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* ==========================================================================
+   Header css start here
+   ========================================================================== */
+.header-section{
+  background-image: url(images/banner.jpg);
+  background-size: cover;
+}
+.header-overlay{
+  background-color: rgba(00,00,00,0.52);
+  height: 90vh;
+  padding-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* Nav css start here
+   ========================================================================== */
+.header-section .header-nav{
+  display: flex;
+  padding: 1.5rem 2.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo a{
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.logo a i{
+  color: #ffc80a; 
+  font-size: 2rem;
+}
+.header-nav .primary-nav a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+}
+.header-nav .primary-nav .active{
+  color: #ffc80a;
+}
+.dropdown-menu{
+  display: none;
+}
+
+/* Banner-caption css start here
+   ========================================================================== */
+.header-section .banner-caption{
+  text-align: center;
+}
+.header-section .banner-caption h1{
+  font-size: 1.3rem;
+  font-weight: 200;
+  color: #fff;
+  letter-spacing: 7px;
+  font-family: 'Oswald', sans-serif;
+  padding-bottom: 2rem;
+}
+.primary-btn{
+  background: #c20d00;
+  color: #fff;
+  padding: 0.8rem 3rem;
+  font-size: 0.8rem;
+  display: inline-block;
+  border: transparent;
+  font-weight: 600;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+.primary-btn:hover{
+  transition: all 1s ease;
+  opacity: 0.7;
+}
+/* Banner-footer css start here
+   ========================================================================== */
+.oreder-info{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+.social-icons li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 0 0.9rem;
+}
+.social-icons li a:hover,
+.order-contact a:hover{
+  color: #ffc80a;
+}
+.order-contact{
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-family: 'Oswald', sans-serif;
+}
+.order-contact i{
+  transform: rotate(91deg);
+}
+.order-contact a{
+  color: #fff;
+  text-decoration: none;
+}
+/* ==========================================================================
+   About css start here
+   ========================================================================== */
+.about{
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+}
+.about .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about article{
+  flex-basis: 47%; 
+}
+.about article .title{
+  font-size: 1.7em;
+  letter-spacing: 6px;
+  line-height: 1.5em;
+  margin: 1em 0;
+  color: #272525;
+  font-weight: 700;
+  font-family: 'Oswald', sans-serif;
+}
+.about article .description{
+  font-size: 0.9rem;
+  color: #2e2e2e;
+  line-height: 1.9rem;
+  letter-spacing: 1px; 
+  text-align: left;
+}
+article .description .text-bold{
+  font-weight: 600;
+}
+/* ==========================================================================
+   Serve-for-you css start here
+   ========================================================================== */
+.serve{
+  background-color: #C20D00;
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.c-title{
+  font-size: 2.3em;
+  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+  color: #33353a; 
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.color-wh{
+  color: #fff;
+}
+.serve-menu{
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  text-align: center;
+  margin: 1rem 0;
+}
+.menu-item .menu-image{
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.15);  
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  width: 65%;
+}
+.menu-item .title{
+  font-size: 1rem;
+  color: #ffc80a;
+  margin: 1.7rem 0 0.4rem 0;
+  letter-spacing: 2px;
+  font-family: 'Oswald' , sans-serif;
+  font-weight: 400;
+}
+.menu-item .price{
+  font-size: 1rem;
+  color: #fff;
+  font-family: 'Oswald' , sans-serif;
+  letter-spacing: 1px;
+}
+/* ==========================================================================
+   Bigger and bolder css start here
+   ========================================================================== */
+.bigger-bolder{
+  padding: 5rem 0;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.tab .tablinks{
+  margin: 0;
+  padding: 1rem 3.8rem;
+  font-weight: 600;
+  text-align: center;
+  color: #2c2c2f;
+  border: none;
+  background: #eff0f1;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-family: 'Oswald' , sans-serif;
+  cursor: pointer;
+}
+.tab .tablinks:hover{
+  color: #c20d00;
+}
+.tab hr{
+  margin-top: 2px;
+  border-top: 1px solid #ddd;
+}
+.tabcontent{
+  display: none;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.tabcontent .tab-items{
+  border: 1px solid #ddd;
+  padding: 5rem 4rem;
+}
+.tabcontent .tab-items:hover .title{
+  color: #c20d00;
+}
+.tab button.active{
+  background-color: #C20D00;
+  color: #ffc80a;
+}
+.tab button.active:hover{
+  color: #fff;
+}
+.tab-items .image{
+  width: 70%;
+  border-radius: 50%;
+  box-shadow: 4px 4px #ccc;
+  margin-bottom: 3rem;
+}
+.tab-items .title{
+  font-size: 1em;
+  color: #33353a;
+  margin: 1rem 0 0.5rem 0;
+  letter-spacing: 2px;
+  font-family: 'Oswald' , sans-serif;
+}
+.tab-items .price{
+  font-family: 'Oswald' , sans-serif;  
+  color: #c20d00;
+  font-weight: 600;
+  font-size: 1rem;
+}
+/* ==========================================================================
+   Free delivery css start here
+   ========================================================================== */
+.free-delivery{
+  padding: 5rem 0;
+  text-align: center;
+  background-color: #ffc80a;
+}
+.heading .title{
+  font-size: 3rem;
+  color: #c20d00;
+  font-weight: 600;
+  font-family: 'Oswald' , sans-serif;  
+}
+.title .small-title{
+  color: #26262b;
+  display: block;
+  font-size: 0.4em;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  line-height: 0;
+}
+.free-delivery .meal{
+  display: flex;
+  padding: 2rem 0;
+  align-items: center;
+}
+.meal .price{
+  flex-basis: 50%;
+  text-align: right;
+  font-family: 'Oswald' , sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  padding-right: 2rem;
+  color: #212529;
+}
+.meal-item .item{
+  display: block;
+  margin: 0.5rem 0;
+  color: #a07d01;
+  font-size: 0.9em;
+  line-height: 2.2em;
+  letter-spacing: 1px;
+}
+.meal-item .item i{
+  color: #c20d00;
+}
+/* ==========================================================================
+   Gallery css start here
+   ========================================================================== */
+.gallery{
+  text-align: center;
+  padding: 5rem 0;
+}
+.grid{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.grid .grid-item{
+  flex-basis: 24%;
+}
+.grid .grid-item a:hover img{
+  box-shadow: 0 18px 17px #ccc;
+  opacity: 0.8;
+  transition: all 1s ease;
+}
+.grid .grid-item img{
+  width: 100%;
+}
+.testimonial{
+  background: url(images/testimonials.jpg) no-repeat; 
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+.footer-layer{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(00,00,00,0.82);  
+}
+.footer-layer .container-small{
+  padding: 10rem;
+}
+.testimonial .client-name{
+  font-family:'Oswald' , sans-serif;
+  font-size: 1rem;
+  line-height: 1rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+.reting {
+ margin: 0.5rem 0 1rem 0;
+}
+.reting a{
+  font-size: 0.8rem;
+  font-weight: normal;
+  color:#ffc80a;
+}
+.testimonial .description{
+  font-size: 0.9rem;
+  line-height: 1.9rem;
+  letter-spacing: 1px;
+}
+.description i{
+  font-size: 1.3rem;
+}
+/* ==========================================================================
+  Contact us css start here
+   ========================================================================== */
+  .contact-us{
+    padding: 5rem 0;
+  }
+/* Form css start here
+   ========================================================================== */
+.contact-us form{
+  padding: 4rem 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+.contact-us form div{
+  flex-basis: 31%;
+}
+.contact-us form label{
+  font-size: 1rem;
+  font-family: 'Oswald' , sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 2rem;
+}
+.contact-us form input{
+  padding: 0.9em;
+  color: #495057;
+  border: 2px solid #d2d6da;
+  border-radius: 0px;
+  font-size: 1em;
+  letter-spacing: 1px; 
+  width: 100%;
+}
+.contact-us form .submit{
+  padding: 0.9rem;
+  font-size: 0.9rem;
+  width: 100%;
+  border: 2px solid transparent;
+  background: #c20d00;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.contact-us form .submit:hover{
+  transition: all 1s ease;
+  opacity: 0.7;
+}
+/* contact-information css start here
+   ========================================================================== */
+.contact-us .contact-info{
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 0;
+}
+.contact-info .location,
+.contact-info .email,
+.contact-info .phone{
+  display: flex;
+  align-self: flex-start;
+  flex-basis: 33%;
+}
+.contact-info .email,
+.contact-info .phone{
+  padding-left: 1.6rem;
+}
+.contact-info .location .icon,
+.contact-info .email .icon,
+.contact-info .phone .icon{
+  font-size: 1.5rem;
+  flex-basis: 15%; 
+}
+.location .description h4,
+.email .description h4,
+.phone .description h4{
+  font-size: 1em;
+  color: #17202A;
+  font-weight: 400;
+  letter-spacing: 2px; 
+  font-family: 'Oswald' , sans-serif;
+  margin-bottom: 0.6rem;
+} 
+.location .description p,
+.email .description p,
+.phone .description p{
+  color: #5a646b;
+  letter-spacing: 1px;
+  line-height: 1.9em;
+}
+.email .description p a,
+.phone .description p a{
+  color: #5a646b;
+  text-decoration: none;
+}
+.email .description p a:hover,
+.phone .description p a:hover{
+  color:#c20d00;
+}
+/* ==========================================================================
+  Footer-section css start here
+   ========================================================================== */
+.footer-section{
+  background: url(images/footer.jpg);
+  background-size: cover;
+  color: #fff;
+}
+.footer-section .footer-layer{
+  padding: 5rem 2.5rem;
+}
+.footer-section .footer-contact{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-contact .description,
+.footer-contact .openinng-time,
+.footer-contact .contacts{
+  align-self: flex-start;
+  flex-basis: 31%;
+}
+.footer-contact .footer-title{
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 400;
+  font-family: 'Oswald' , sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(251, 247, 247, 0.1);
+}
+.footer-section .logo{
+  margin-bottom: 0.5rem;  
+}
+
+.footer-section p{
+  font-size: 0.9em;
+  color: #fff;
+  line-height: 1.9em;
+  letter-spacing: 1px;
+}
+.openinng-time p{
+  padding: 1.2rem 0;
+  border-bottom: 1px solid rgba(251, 247, 247, 0.1);
+}
+.contacts a{
+  line-height: 2.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.copyright{
+  padding-top: 6rem;
+  text-align: center;
+}
+.copyright a{
+  color: #fff;
+  text-decoration: none;
+}
+.copyright a:hover,
+.contacts a:hover{
+  color: #ffc80a;
+}
+.copyright .social-icons{
+  margin-top: 1rem;
+}
