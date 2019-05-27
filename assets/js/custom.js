@@ -18,3 +18,8 @@ function openMenu(evt, openMenu) {
   document.getElementById(openMenu).style.display = "flex";
   evt.currentTarget.className += " active";
 }
+$(document).ready(function(){
+  $('.humberger').click(function(){
+    $('.primary-nav').toggleClass('active')
+  })
+})

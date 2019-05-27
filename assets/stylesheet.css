@@ -82,7 +82,13 @@ ul li{
 .dropdown-menu{
   display: none;
 }
-
+.humberger{
+  display: none;
+}
+.humberger i{
+  font-size: 1.5rem;
+  color: #ffc80a;
+}
 /* Banner-caption css start here
    ========================================================================== */
 .header-section .banner-caption{
@@ -146,7 +152,7 @@ ul li{
    About css start here
    ========================================================================== */
 .about{
-  padding: 5rem 0;
+  padding: 5rem 1rem;
   display: flex;
   align-items: center;
 }
@@ -204,6 +210,10 @@ article .description .text-bold{
   width: 75%;
   text-align: center;
   margin: 1rem 0;
+  flex-wrap: wrap;
+}
+.serve-menu .menu-item{
+  margin-top: 1rem;
 }
 .menu-item .menu-image{
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.15);  
@@ -260,10 +270,12 @@ article .description .text-bold{
   display: none;
   justify-content: space-between;
   padding: 2rem 0;
+  flex-wrap: wrap;
 }
 .tabcontent .tab-items{
   border: 1px solid #ddd;
   padding: 5rem 4rem;
+  flex-basis: 24%;
 }
 .tabcontent .tab-items:hover .title{
   color: #c20d00;
@@ -276,7 +288,7 @@ article .description .text-bold{
   color: #fff;
 }
 .tab-items .image{
-  width: 70%;
+  width: 100%;
   border-radius: 50%;
   box-shadow: 4px 4px #ccc;
   margin-bottom: 3rem;
@@ -293,6 +305,9 @@ article .description .text-bold{
   color: #c20d00;
   font-weight: 600;
   font-size: 1rem;
+}
+#burgers{
+  display: flex;
 }
 /* ==========================================================================
    Free delivery css start here
@@ -352,6 +367,7 @@ article .description .text-bold{
   display: flex;
   width: 100%;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .grid .grid-item{
   flex-basis: 24%;
@@ -567,3 +583,204 @@ article .description .text-bold{
 .copyright .social-icons{
   margin-top: 1rem;
 }
+
+/* ==========================================================================
+  Media query start here
+   ========================================================================== */
+@media(max-width: 1200px){
+  .gallery,
+  .contact-us{
+    padding: 5rem 1rem;
+  }
+  .container-small {
+    max-width: 100%;
+  }
+}  
+@media(max-width: 992px){
+  .header-nav .primary-nav a{
+    padding: 0.5rem 1rem;
+  }
+  .about article {
+    flex-basis: 60%;
+  }
+  .about img{
+    max-width: 40%;
+  }
+  .tabcontent .tab-items{
+    flex-basis: 48%;
+    margin-top: 1.5rem;
+  }
+  .container-small{
+    max-width: 100%;
+  }
+}
+
+
+@media(max-width: 769px){
+  .humberger{
+    display: block;
+    position: absolute;
+    z-index: 9;
+    right: 20px;
+    cursor: pointer;
+  }
+  .primary-nav{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    top: 50px;
+    background: rgba(00,00,00,0.8);
+    justify-content: space-around;
+    align-items: center;
+    left: -300%;
+    transition: all 0.5s ease-out;
+  }
+  .primary-nav.active{
+    left: 0;
+    top: 0;
+  }
+  .oreder-info{
+    width: 90%;
+  }
+  .about .container{
+    flex-direction: column;
+
+  }
+  .about img{
+    max-width: 70%;
+  }
+  .tab .tablinks{
+    padding: 1rem 3.4rem;
+  }
+  .tabcontent .tab-items{
+    flex-basis: 49%;
+    margin-top: 1rem;
+  }
+  .footer-layer .container-small{
+    max-width: 80%;
+    padding: 5rem 1rem;
+  }
+  .serve{
+    padding: 5rem 1rem;
+  }
+  .c-title{
+    font-size: 1.8em;
+  }
+  .serve-menu{
+    width: 100%;
+  }
+  .grid .grid-item{
+    flex-basis: 49.5%;
+  }
+  .contact-us form,
+  .contact-us .contact-info,
+  .footer-section .footer-contact{
+    flex-direction: column;
+  }
+  .contact-us form div{
+    padding-top: 1rem;
+  }
+  .footer-contact .description, 
+  .footer-contact .openinng-time,
+  .footer-contact .contacts{
+    padding-top: 2rem;
+  }
+  .contact-info .location, 
+  .contact-info .email, 
+  .contact-info .phone{
+    width: 100%;
+    padding-top: 1rem;
+    padding-left: 0;
+  }
+}
+@media(max-width: 600px){
+  .oreder-info{
+    width: 90%;
+  }
+  .serve-menu .menu-item{
+    flex-basis: 50%
+  }
+  .tab .tablinks{
+    width: 100%;
+  }
+  .heading .title{
+    font-size: 1.8rem;
+  }
+  .meal .price{
+    flex-basis: 38%;
+  }
+  .footer-layer .container-small{
+    max-width: 100%;
+    padding: 4rem 1rem;
+  }
+  .gallery,
+  .contact-us{
+    padding: 3rem 1rem;
+  }
+}
+
+@media(max-width: 460px){
+  .container{
+    padding: 0 1rem;
+  }
+  .oreder-info{
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+  }
+  .oreder-info .order-contact{
+    margin-top: 1rem;
+  }
+  .about article .title,
+  .c-title,
+  .heading .title{
+    font-size: 1.5em;
+  }
+  .serve-menu .menu-item{
+    margin: 1.5rem auto 0;
+  }
+  .serve{
+    padding: 3rem 1rem;
+  }
+  .tab .tablinks{
+    width: 100%;
+  }
+  .tabcontent .tab-items{
+    flex-basis: 100%;
+  }
+  .free-delivery .meal{
+    display: block;
+  }
+  .meal .price{
+    text-align: center;
+    font-size: 3rem;
+    padding: 0;
+  }
+  .footer-layer .container-small{
+    max-width: 100%;
+    padding: 4rem 1rem;
+  }
+  .contact-us form,
+  .contact-us .contact-info,
+  .footer-section .footer-contact{
+    flex-direction: column;
+  }
+  .contact-us form div{
+    padding-top: 1rem;
+  }
+  .footer-contact .description, 
+  .footer-contact .openinng-time,
+  .footer-contact .contacts{
+    padding-top: 2rem;
+  }
+  .contact-info .location, 
+  .contact-info .email, 
+  .contact-info .phone{
+    width: 100%;
+    padding-top: 1rem;
+    padding-left: 0;
+  }
+}
+
