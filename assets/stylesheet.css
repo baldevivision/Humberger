@@ -451,12 +451,12 @@ article .description .text-bold{
   Contact us css start here
    ========================================================================== */
   .contact-us{
-    padding: 5rem 0;
+    padding: 5.5rem 0 5rem;
   }
 /* Form css start here
    ========================================================================== */
 .contact-us form{
-  padding: 4rem 0;
+  padding: 4rem 0 6.5rem;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #ccc;
@@ -465,11 +465,12 @@ article .description .text-bold{
   flex-basis: 31%;
 }
 .contact-us form label{
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: 'Oswald' , sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
   line-height: 2rem;
+  color: #1c2833;
 }
 .contact-us form input{
   padding: 0.9em;
@@ -491,6 +492,7 @@ article .description .text-bold{
   letter-spacing: 3px;
   text-transform: uppercase;
   cursor: pointer;
+  font-weight: 600;
 }
 .contact-us form .submit:hover{
   transition: all 1s ease;
@@ -501,7 +503,7 @@ article .description .text-bold{
 .contact-us .contact-info{
   display: flex;
   justify-content: space-between;
-  padding: 4rem 0;
+  padding: 5rem 2rem;
 }
 .contact-info .location,
 .contact-info .email,
@@ -518,7 +520,12 @@ article .description .text-bold{
 .contact-info .email .icon,
 .contact-info .phone .icon{
   font-size: 1.5rem;
-  flex-basis: 15%; 
+  flex-basis: 20%; 
+}
+.contact-info .location .icon i,
+.contact-info .email .icon i,
+.contact-info .phone .icon i{
+  color: #46484C;
 }
 .location .description h4,
 .email .description h4,
@@ -536,6 +543,7 @@ article .description .text-bold{
   color: #5a646b;
   letter-spacing: 1px;
   line-height: 1.9em;
+  font-size: 0.8rem;
 }
 .email .description p a,
 .phone .description p a{
@@ -553,9 +561,10 @@ article .description .text-bold{
   background: url(images/footer.jpg);
   background-size: cover;
   color: #fff;
+  background-position: center;
 }
 .footer-section .footer-layer{
-  padding: 5rem 2.5rem;
+  padding: 4.5rem 3rem;
 }
 .footer-section .footer-contact{
   display: flex;
@@ -566,6 +575,9 @@ article .description .text-bold{
 .footer-contact .contacts{
   align-self: flex-start;
   flex-basis: 31%;
+}
+.footer-contact .description p{
+  margin-top: 0.6rem;
 }
 .footer-contact .footer-title{
   font-size: 1.2rem;
@@ -591,14 +603,19 @@ article .description .text-bold{
   padding: 1.2rem 0;
   border-bottom: 1px solid rgba(251, 247, 247, 0.1);
 }
+.openinng-time p:nth-child(2){
+  margin-top: 0.6rem;
+}
 .contacts a{
   line-height: 2.5rem;
   color: #fff;
   text-decoration: none;
 }
-
+.contacts .footer-title{
+  margin-bottom: 0.8rem;
+}
 .copyright{
-  padding-top: 6rem;
+  padding-top: 4rem;
   text-align: center;
 }
 .copyright a{
